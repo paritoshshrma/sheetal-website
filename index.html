@@ -7,60 +7,57 @@
     <style>
         body {
             margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
             text-align: center;
             color: white;
-            overflow-x: hidden;
+            background: url('https://i.imgur.com/qI5bdBk.gif') no-repeat center center fixed;
+            background-size: cover;
+            overflow: hidden;
         }
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: fadeIn 2s ease-in-out;
         }
         h1 {
-            font-size: 50px;
-            opacity: 0;
-            animation: fadeIn 2s forwards;
+            font-size: 3rem;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+        p {
+            font-size: 1.5rem;
+            margin-top: 10px;
         }
         .gallery {
-            margin-top: 30px;
+            margin-top: 20px;
         }
         .gallery img {
             width: 200px;
-            height: 200px;
-            border-radius: 10px;
+            height: 250px;
             margin: 10px;
-            transition: transform 0.5s;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
         }
         .gallery img:hover {
             transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
         }
-        .message {
-            margin-top: 30px;
-            font-size: 20px;
-            opacity: 0;
-            animation: fadeIn 3s forwards 1s;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>For You, Sheetal ❤️</h1>
+        <h1>Happy Valentine's Day, Sheetal! ❤️</h1>
+        <p>You are the most budhu person I've ever met but mere liye aap he best ho, Ms. Sheetal pal perry loves you a lot and hn yaad aati h aapki kaafi happy valentines day meri sheetal ji, i love you. 💖</p>
         <div class="gallery">
             <img src="photo1.jpg" alt="Sheetal">
             <img src="photo2.jpg" alt="Sheetal">
             <img src="photo3.jpg" alt="Sheetal">
-            <img src="photo4.jpg" alt="Sheetal">
-            <img src="photo5.jpg" alt="Sheetal">
         </div>
-        <div class="message">You are the most budhu person I've ever met but mere liye aap he best ho, Ms. Sheetal pal perry loves you a lot and hn yaad aati h aapki kaafi happy valentines day meri sheetal ji, i love you!  ❤️</div>
     </div>
 </body>
 </html>
